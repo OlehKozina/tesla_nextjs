@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+.container {
+  /* width: 1440px; */
+  margin: 0 auto;
+  /* @media (max-width: 768px) {
+    max-width: 768px;
+  } */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin: 24px 60px 60px 40px;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    margin-bottom: 0px;
+  }
+}
