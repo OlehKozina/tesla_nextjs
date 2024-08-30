@@ -91,8 +91,7 @@ export default function Header() {
         )}
       </div>
 
-      <div className="flex justify-center flex-wrap md:mb-14 lg:flex-nowrap lg:mb-10">
-        {/* Example Info Block */}
+      <div className="flex justify-center flex-wrap  md:mb-14 lg:flex-nowrap lg:mb-10">
         <div className="flex items-center mr-5 lg:mr-20">
           <Image
             src="/speed.png"
@@ -103,10 +102,35 @@ export default function Header() {
           />
           <div className="info_block_text">
             <div className="text-2xl font-semibold lg:text-4xl leading-[43px]">
-              2.7 <span className="text-lg font-semibold leading-6">sec</span>
+              2,7 <span className="text-lg font-semibold leading-6">sec</span>
             </div>
             <div className="text-sm lg:text-base">0-100 kmph</div>
           </div>
+        </div>
+        <div className="flex items-center mr-5 lg:mr-20">
+          <Image
+            src="/road_icon.png"
+            alt="road_icon"
+            width={46}
+            height={65}
+            className="mr-4"
+          />
+          <div className="info_block_text">
+            <div className="font-semibold text-2xl lg:text-4xl leading-[43px]">
+              632 <span>km</span>
+            </div>
+            <div className="text-sm lg:text-base">power reserve</div>
+          </div>
+        </div>
+        <div className="flex items-center text-center uppercase text-sm font-bold leading-4">
+          <Image
+            src="/steering-wheel.png"
+            alt="steering_wheel"
+            width={22}
+            height={22}
+            className="mr-2"
+          />
+          <div>test drive</div>
         </div>
 
         <OrderButton />
